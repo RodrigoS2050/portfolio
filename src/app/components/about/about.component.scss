@@ -1,0 +1,24 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  p {
+    color: $secondary-text-color;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+    @include mobile-480 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+h2 {
+  @include styled-text;
+  @include mobile-480 {
+    font-size: 1.8rem;
+  }
+}

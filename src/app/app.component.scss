@@ -1,0 +1,38 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.name {
+  width: 100%;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  background: $gradient;
+  padding: 0.6rem 2.5rem 0 2.5rem;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mobile-1080 {
+    text-align: center;
+  }
+  @include mobile-768 {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 4rem;
+  }
+  @include mobile-480 {
+    font-size: 3rem;
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem;
+  gap: 2rem;
+  @include mobile-1280 {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}

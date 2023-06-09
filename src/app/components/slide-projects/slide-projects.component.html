@@ -1,0 +1,26 @@
+<section>
+  <h2>Projetos</h2>
+  <div class="projects-container">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let project of slidesProjects">
+        <ng-template carouselSlide [id]="project.id">
+          <img class="image-project" [src]="project.src" [alt]="project.alt" />
+          <h3 class="project-title">{{ project.title }}</h3>
+          <div class="technologies-container">
+            <p class="technologies" *ngFor="let item of project.technologies">
+              {{ item }}
+            </p>
+          </div>
+          <div class="links-container">
+            <a href="{{ project.link }}" target="_blank">
+              <img class="link" src="assets/svg/external-link.svg"
+            /></a>
+            <a href="{{ project.github }}" target="_blank">
+              <img class="link" src="assets/svg/github.svg"
+            /></a>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<section class="about-container">
+  <h2>Sobre</h2>
+  <div *ngIf="!isScreenSmall">
+    <p>Olá, me chamo Rodrigo Silva de Almeida 👋</p>
+    <p>
+      Sou formado em Sistemas da Informação pela Universidade Estácio de Sá.
+      Tenho conhecimentos sólidos em Angular, sou capaz de criar interfaces de
+      usuário responsivas, interativas e altamente funcionais.
+    </p>
+    <p>
+      Atualmente atuo como Desenvolvedor Front End Júnior e tenho a oportunidade
+      de trabalhar em projetos práticos, onde posso aplicar meus conhecimentos.
+      Trabalhar em equipe e colaborar com outros profissionais de TI está sendo
+      uma experiência enriquecedora, pois aprendi a comunicar minhas ideias e
+      contribuir para o sucesso do projeto como um todo.
+    </p>
+    <p>
+      Como desenvolvedor Front End Júnior, estou constantemente buscando
+      aprender e me atualizar sobre as últimas tecnologias e tendências do
+      setor. Tenho habilidades de aprendizado rápido e sou capaz de me adaptar
+      rapidamente a novas tecnologias e ambientes de trabalho.
+    </p>
+    <p>
+      Além disso, sou um profissional proativo, organizado e apaixonado por
+      resolver problemas complexos por meio da programação. Estou sempre em
+      busca de oportunidades para aprimorar minhas habilidades e contribuir para
+      o sucesso dos projetos em que estou envolvido.
+    </p>
+  </div>
+  <ng-template [ngIf]="isScreenSmall">
+    <p>
+      Olá, me chamo Rodrigo Silva de Almeida, sou formado em Sistemas da
+      Informação. Tenho conhecimentos sólidos em Angular e sou especializado em
+      criar interfaces de usuário responsivas e funcionais.
+    </p>
+    <p>
+      Atualmente, trabalho como Desenvolvedor Front End Júnior em projetos
+      práticos, colaborando com outros profissionais de TI. Estou sempre
+      aprendendo sobre as últimas tecnologias e tendências do setor.
+    </p>
+    <p>
+      Sou proativo, organizado e adoro resolver problemas complexos através da
+      programação. Busco constantemente oportunidades para aprimorar minhas
+      habilidades e contribuir para o sucesso dos projetos em que participo.
+    </p>
+  </ng-template>
+</section>

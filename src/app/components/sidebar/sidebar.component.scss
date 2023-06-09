@@ -1,0 +1,108 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.sidebar-container {
+  background-color: $primary-bg-color;
+  border-radius: $container-border-radius;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2.5rem 1.25rem 4rem 1.25rem;
+  position: relative;
+}
+
+.profile {
+  max-width: 25rem;
+  border-radius: $container-border-radius;
+  margin-bottom: 1.6rem;
+  @include mobile-480 {
+    max-width: 15rem;
+  }
+}
+
+.office {
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $secondary-text-color;
+  background-color: $secondary-bg-color;
+  border-radius: $card-border-radius;
+  padding: 0.8rem 1.2rem;
+}
+
+.social-networks {
+  @include center;
+  gap: 1rem;
+  margin: 1rem 0;
+  img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+.social-btn {
+  padding: 0.6rem;
+  background-color: $secondary-bg-color;
+  border-radius: $card-border-radius;
+  @include center;
+  &:hover {
+    background-color: #24024d;
+  }
+}
+
+.information-container {
+  @include center;
+  flex-direction: column;
+  background-color: $secondary-bg-color;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  border-radius: $card-border-radius;
+  word-break: break-all;
+}
+
+.info-card {
+  @include center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #444;
+  width: 100%;
+  h3 {
+    font-family: $secondary-font;
+    font-size: 0.8rem;
+    color: $secondary-text-color;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-family: $primary-font;
+    color: $primary-text-color;
+  }
+}
+
+.info-icon {
+  background-color: $primary-bg-color;
+  padding: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: $card-border-radius;
+}
+
+.download-container {
+  @include center;
+  gap: 0.6rem;
+  background: $gradient;
+  padding: 1rem 1.2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.5s;
+  a {
+    font-family: $primary-font;
+    color: $primary-text-color;
+  }
+  &:hover {
+    scale: (1.1);
+  }
+}

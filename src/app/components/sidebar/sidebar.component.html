@@ -1,0 +1,29 @@
+<section class="sidebar-container">
+  <img class="profile" src="assets/images/profile.jpg" alt="Foto de Perfil" />
+  <h3 class="office">Desenvolvedor Front End Júnior</h3>
+  <div class="social-networks">
+    <a
+      *ngFor="let network of socialNetworks"
+      class="social-btn"
+      href="{{ network.href }}"
+      target="_blank"
+    >
+      <img src="{{ network.src }}" alt="{{ network.alt }}"
+    /></a>
+  </div>
+  <div class="information-container">
+    <div class="info-card" *ngFor="let info of informations">
+      <img class="info-icon" src="{{ info.src }}" alt="{{ info.alt }}" />
+      <div>
+        <h3>{{ info.title }}</h3>
+        <p>{{ info.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="download-container">
+    <img src="assets/svg/download.svg" alt="Download Icon" />
+    <a target="_blank" href="assets/Curriculo_Rodrigo_Silva_de_Almeida.pdf"
+      >Download Currículo</a
+    >
+  </div>
+</section>

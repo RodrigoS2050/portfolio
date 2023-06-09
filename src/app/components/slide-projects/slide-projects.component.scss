@@ -1,0 +1,61 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+h2 {
+  @include styled-text;
+  @include mobile-480 {
+    font-size: 1.8rem;
+  }
+}
+
+.projects-container {
+  @include center;
+  padding-top: 1rem;
+}
+
+.image-project {
+  display: inline-block;
+  border-radius: $card-border-radius;
+}
+
+.project-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: $primary-text-color;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.technologies-container {
+  @include center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.technologies {
+  font-family: $secondary-font;
+  padding: 0.6rem 1.25rem;
+  border-radius: $card-border-radius;
+  background-color: #6f1998;
+  color: $tertiary-text-color;
+  text-align: center;
+  @include mobile-480 {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  img {
+    margin-top: 0.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

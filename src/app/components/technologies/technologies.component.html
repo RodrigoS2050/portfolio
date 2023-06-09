@@ -1,0 +1,15 @@
+<section class="technologies-container">
+  <h2>Tecnologias</h2>
+  <div class="technologies">
+    <div *ngFor="let image of technologies" class="tooltip-container">
+      <img
+        [src]="image.src"
+        (mouseover)="showTooltip(image)"
+        (mouseleave)="hideTooltip(image)"
+      />
+      <span class="tooltip" [ngClass]="{ visible: image.tooltipVisible }">{{
+        image.tooltip
+      }}</span>
+    </div>
+  </div>
+</section>

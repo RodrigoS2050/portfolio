@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&display=swap");
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+@import "src/styles/reset.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg-color;
+}
+
+.link {
+  width: 1.5rem;
+  height: 1.25rem;
+}
+
+.owl-carousel {
+  position: relative;
+  width: 50rem;
+  padding-left: 0.5rem;
+  @include mobile-1080 {
+    width: 38rem;
+  }
+  @include mobile-768 {
+    width: 28rem;
+  }
+  @include mobile-480 {
+    width: 17rem;
+  }
+}
+
+.owl-item {
+  padding-right: 1.25rem;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  background-color: transparent !important;
+  &::after {
+    content: url("assets/svg/left-arrow.svg");
+  }
+  @include mobile-1280 {
+    top: 40%;
+    left: -40px;
+  }
+  @include mobile-1080 {
+    top: 40%;
+    left: -45px;
+  }
+  @include mobile-480 {
+    top: 40%;
+    left: -35px;
+  }
+}
+
+.owl-next {
+  position: absolute;
+  top: 30%;
+  right: -50px;
+  background-color: transparent !important;
+  &::after {
+    content: url("assets/svg/right-arrow.svg");
+  }
+  @include mobile-1280 {
+    top: 40%;
+    right: -35px;
+  }
+  @include mobile-1080 {
+    top: 40%;
+    right: -40px;
+  }
+  @include mobile-480 {
+    top: 40%;
+    right: -30px;
+  }
+}

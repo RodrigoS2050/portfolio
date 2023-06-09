@@ -1,0 +1,7 @@
+@import "src/styles/variables.scss";
+
+.main-container {
+  background-color: $primary-bg-color;
+  border-radius: $container-border-radius;
+  padding: 4rem 2rem;
+}
