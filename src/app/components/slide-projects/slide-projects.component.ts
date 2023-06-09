@@ -13,7 +13,7 @@ export class SlideProjectsComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.projectAppears = true;
-    }, 500);
+    }, 100);
   }
 
   slidesProjects: Project[] = [
