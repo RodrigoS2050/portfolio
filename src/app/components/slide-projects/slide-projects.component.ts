@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Project } from 'src/app/types/project';
 
@@ -7,7 +7,15 @@ import { Project } from 'src/app/types/project';
   templateUrl: './slide-projects.component.html',
   styleUrls: ['./slide-projects.component.scss'],
 })
-export class SlideProjectsComponent {
+export class SlideProjectsComponent implements AfterViewInit {
+  projectAppears: boolean = false;
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.projectAppears = true;
+    }, 500);
+  }
+
   slidesProjects: Project[] = [
     {
       id: '1',
