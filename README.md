@@ -6,7 +6,6 @@ Meu portfólio pessoal para apresentação dos meus projetos, meus conhecimentos
 
 - Angular
 - TypeScript
-- Bootstrap
 - Sass
 - Owl Carousel - Biblioteca de Slide
 
