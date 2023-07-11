@@ -54,6 +54,12 @@ export class TechnologiesComponent {
       tooltipVisible: false,
     },
     {
+      src: 'assets/svg/rxjs.svg',
+      alt: 'RxJS Icon',
+      tooltip: 'RxJS',
+      tooltipVisible: false,
+    },
+    {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/karma/karma-original.svg',
       alt: 'Karma Icon',
       tooltip: 'Karma',
