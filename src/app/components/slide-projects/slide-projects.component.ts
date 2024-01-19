@@ -109,6 +109,7 @@ export class SlideProjectsComponent implements AfterViewInit {
     autoplay: true,
     autoplaySpeed: 900,
     dots: false,
+    margin: 15,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
