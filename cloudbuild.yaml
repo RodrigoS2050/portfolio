@@ -1,0 +1,28 @@
+steps:# 
+steps:
+- name: "gcr.io/cloud-builders/docker"
+args: ["build", "-t", "gcr.io/portfolio-413023/01-portfolio", "."]
+# push the container image to Container Registry
+- name: "gcr.io/cloud-builders/docker"
+- name: "gcr.io/cloud-builders/docker"
+args: ["push", "gcr.io/portfolio-413023/01-portfolio"]
+# Deploy container image to Cloud Run
+- name: "gcr.io/cloud-builders/gcloud"
+args:
+[
+"beta",
+"run",
+"deploy",
+"--allow-unauthenticated",
+"portfolio-413023",
+"--image",
+"gcr.io/portfolio-413023/01-portfolio",
+"--region",
+"us-central1",
+"--platform",
+"managed",
+"--memory",
+"128Mi"
+]
+images:
+- "gcr.io/portfolio-413023/01-portfolio"
