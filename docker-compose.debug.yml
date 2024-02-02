@@ -1,9 +1,0 @@
-version: '3.4'
-
-services:
-  01-portfolio:
-    image: 01-portfolio
-    build: .
-    ports:
-      - 8081:80
-
