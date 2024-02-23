@@ -17,7 +17,7 @@ export class SidebarComponent {
     {
       src: 'assets/svg/github.svg',
       alt: 'Github Icon',
-      href: 'https://github.com/RodrigoS2050',
+      href: 'https://github.com/RodrigoSADev',
     },
   ];
 
@@ -32,7 +32,7 @@ export class SidebarComponent {
       src: 'assets/svg/envelope-fill.svg',
       alt: 'Email Icon',
       title: 'E-mail',
-      description: 'rodrigosalmeida2050@gmail.com',
+      description: 'rodrigosalmeidadev@gmail.com',
     },
     {
       src: 'assets/svg/geo-alt-fill.svg',

@@ -23,7 +23,7 @@ export class SlideProjectsComponent implements AfterViewInit {
       alt: 'Project Building Car',
       title: 'Building Car',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/RodrigoS2050/Building_Car',
+      github: 'https://github.com/RodrigoSADev/Building_Car',
       link: 'https://building-car-rs.netlify.app/',
     },
     {
@@ -32,7 +32,7 @@ export class SlideProjectsComponent implements AfterViewInit {
       alt: 'Project Environmental Reserve',
       title: 'Reserval Ambiental',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/RodrigoS2050/Reserva_Ambiental',
+      github: 'https://github.com/RodrigoSADev/Reserva_Ambiental',
       link: 'https://reserval-ambiental-rs.netlify.app/',
     },
     {
@@ -48,7 +48,7 @@ export class SlideProjectsComponent implements AfterViewInit {
         'Karma',
         'Jasmine',
       ],
-      github: 'https://github.com/RodrigoS2050/Serenatto',
+      github: 'https://github.com/RodrigoSADev/Serenatto',
       link: 'https://serenatto-rs.netlify.app/',
     },
     {
@@ -64,7 +64,7 @@ export class SlideProjectsComponent implements AfterViewInit {
         'RxJS',
         'NgRx',
       ],
-      github: 'https://github.com/RodrigoS2050/Virtual-Store',
+      github: 'https://github.com/RodrigoSADev/Virtual-Store',
       link: 'https://virtual-store-rs.netlify.app',
     },
     {
@@ -81,7 +81,7 @@ export class SlideProjectsComponent implements AfterViewInit {
         'Jasmine',
         'Infinite Scroll',
       ],
-      github: 'https://github.com/RodrigoS2050/Buscante',
+      github: 'https://github.com/RodrigoSADev/Buscante',
       link: 'https://buscante-rs.netlify.app',
     },
     {
@@ -97,7 +97,7 @@ export class SlideProjectsComponent implements AfterViewInit {
         'Jasmine',
         'NgRx',
       ],
-      github: 'https://github.com/RodrigoS2050/Meteora',
+      github: 'https://github.com/RodrigoSADev/Meteora',
       link: 'https://meteora-rs.netlify.app',
     },
   ];
