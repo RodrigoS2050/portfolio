@@ -36,6 +36,12 @@ export class TechnologiesComponent {
       tooltipVisible: false,
     },
     {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg',
+      alt: 'Angular Material Icon',
+      tooltip: 'Angular Material',
+      tooltipVisible: false,
+    },
+    {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
       alt: 'Sass Icon',
       tooltip: 'Sass',
@@ -54,9 +60,15 @@ export class TechnologiesComponent {
       tooltipVisible: false,
     },
     {
-      src: 'assets/svg/rxjs.svg',
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
       alt: 'RxJS Icon',
       tooltip: 'RxJS',
+      tooltipVisible: false,
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ngrx/ngrx-original.svg',
+      alt: 'NgRx Icon',
+      tooltip: 'NgRx',
       tooltipVisible: false,
     },
     {
@@ -66,15 +78,15 @@ export class TechnologiesComponent {
       tooltipVisible: false,
     },
     {
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-plain.svg',
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jasmine/jasmine-original.svg',
       alt: 'Jasmine Icon',
       tooltip: 'Jasmine',
       tooltipVisible: false,
     },
     {
-      src: 'assets/svg/ngrx.svg',
-      alt: 'NgRx Icon',
-      tooltip: 'NgRx',
+      src: 'assets/svg/cypress.svg',
+      alt: 'Cypress Icon',
+      tooltip: 'Cypress',
       tooltipVisible: false,
     },
   ];
