@@ -12,7 +12,7 @@ export class SidebarComponent {
     {
       src: 'assets/svg/linkedin.svg',
       alt: 'LinkedIn Icon',
-      href: 'https://www.linkedin.com/in/rodrigo-silva-86044a224/',
+      href: 'https://www.linkedin.com/in/rodrigos-almeida/',
     },
     {
       src: 'assets/svg/github.svg',
